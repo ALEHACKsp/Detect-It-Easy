@@ -1,12 +1,12 @@
 // DIE's signature file
 
-init("joiner","Anskya Binder");
+init("source","HTML");
 
 function detect(bShowType,bShowVersion,bShowOptions)
 {
-    if(PE.compareEP("BE........BB........33ED83EE04392E7411"))
+    var sText=Binary.getString(0,Math.min(Binary.getSize(),8192));
+    if(/^<(!DOCTYPE )?html/m.test(sText))
     {
-        sVersion="1.1";
         bDetected=1;
     }
 

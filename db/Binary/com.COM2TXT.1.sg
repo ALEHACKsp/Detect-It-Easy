@@ -1,13 +1,13 @@
 // DIE's signature file
 // Author: hypn0 <hypn0@mail.ru>
 
-init("immunizer","immunizer by SI-IS & Szegi Soft");
+init("converter","COM2TXT");
 
 function detect(bShowType,bShowVersion,bShowOptions)
 {
-    if(MSDOS.compareEP("50061e06a1....0e1fa3....065033c08ed8813e........75..b8....cd21fa891e....8c06....fbb8....cd21"))
+    if(Binary.compare("'XP5~~-~}P]XP-@?->@1Fq1Fx0F6,00F7,b(F8ZRu(XP2FzE,@r42fzWBxG!='"))
     {
-        sOptions="1989";
+        sOptions="1997 by GyikSoft";
         bDetected=1;
     }
 
